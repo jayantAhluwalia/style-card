@@ -15,7 +15,7 @@ body {
 
 h1,
 h2 {
-	font-size: 2.4em;
+	font-size: 2em;
 }
 
 p {
@@ -29,7 +29,7 @@ main {
 	flex-direction: column-reverse;
 	width: 375px;
 	background-color: hsl(244, 38%, 16%);
-	border-radius: 2rem;
+	border-radius: 0.8rem;
 }
 .info {
 	color: white;
@@ -58,6 +58,7 @@ li h2{
 .image img {
 	max-width: 100%;
 	border-radius: 2rem 2rem 0 0;
+	/* background: purple; */
 	filter: sepia(100%) hue-rotate(190deg) saturate(500%);
 }
 
@@ -67,17 +68,50 @@ li h2{
 	main {
 		display: flex;
 		flex-direction: row;
-		width: 1000px;
+		/* flex-wrap: wrap-reverse; */
+		width: 800px;
+	}
+	h1,
+	p {
+		padding: 0 30px 0 20px;
+		text-align: left;
+	}
+	p {
+		padding-bottom: 40px;
 	}
 	.info {
 		display: flex;
+		width: 400px;
+		margin: 10px 30px 0 20px
+		/* margin-right: 30px; */
+		/* padding-right: 80px; */
 	}
 	ul{
 		display: flex;
-		justify-content: space-between;
+		/* justify-content: space-between; */
+		/* padding-right: 10px; */
 
 	}
+	li h2 {
+		font-size: 1.575em;
+	}
+
 	li {
-		padding-right: 2em;
+		padding-right: 1em;
+	}
+	.image img{
+		border-radius: 0 1em 1em 0;
+		width: 400px;
+		height: 446px;
+	}
+	.image .mobile-img {
+		display: none;
+	}
+	
+}
+
+@media (max-width: 800px) {
+	.image .desktop-img {
+		display: none;
 	}
 }
